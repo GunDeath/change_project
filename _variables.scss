@@ -1,0 +1,48 @@
+$title_color: #fff;
+$background_color: #3a4052;
+$btn_color: #000;
+
+$height_input: 70px;
+$container_width: 90%;
+
+@mixin media-es {
+    @media screen and (max-width: 350px) {
+      @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 550px) {
+      @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 750px) {
+      @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin media-xm {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (max-width: 1450px) {
+        @content;
+    }
+}

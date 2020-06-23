@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'main_block';
+@import 'fields_block';
+@import 'functions';
+@import 'responsive';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $title_color;
+}
+
+body{
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    line-height: 1.4;
+}
+
+input{
+    font-family: 'Arial', sans-serif;
+    border: none;
+    outline: none;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.container{
+    width: $container_width;
+    margin: 0 auto ;
+    
+}
+
+.main_block{
+    height: 100vh;
+    background: $background_color url('./../../dist/img/money_photo.jpg') no-repeat center
+    center/cover;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: darken;
+}
+
