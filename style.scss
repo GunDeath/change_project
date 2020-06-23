@@ -19,6 +19,13 @@ a{
     color: $title_color;
 }
 
+h2{
+    font-size: 75px;
+    color: $title_color;
+    font-weight: 700;
+    text-shadow:  .05em 0 $background_color;
+}
+
 body{
     font-family: 'HelveticaNeueCyr', sans-serif;
     line-height: 1.4;

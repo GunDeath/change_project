@@ -19,7 +19,7 @@
     .text_main_block{
 
         .main_text{
-            font-size: 55px;
+            font-size: 65px;
         }
     }
 
@@ -41,13 +41,14 @@
 }
 
 @include media-sm{ //1100
-    .content_block{
+    .text_main_block{
 
-        .text_main_block{
-            .main_text{
-                font-size: 55px;
-            }
+        .main_text{
+            font-size: 65px;
         }
+    }
+
+    .content_block{
 
         .fields{
             display: flex;
@@ -70,11 +71,9 @@
 
 @include media-lg{ //900
     .text_main_block{
-        .text_main_block{
-            .main_text{
-                font-size: 65px;
-                color: red;
-            }   
+
+        .main_text{
+            font-size: 65px;
         }
     }
 
@@ -91,14 +90,12 @@
 
 @include media-md{ //750
 
-    .text_main_block{
-
-        .main_text{
-            font-size: 65px;
-        }
-    }
-
     .content_block{
+        .text_main_block{
+            .main_text{
+                font-size: 75px;
+            }
+        }
 
         .fields{
             display: flex;
@@ -123,12 +120,15 @@
 }
 
 @include media-sm{ //550
-    .text_main_block{
+    .content_block{
+        .text_main_block{
 
-        .main_text{
-            font-size: 25px;
+            .main_text{
+                font-size: 25px;
+            }
         }
     }
+    
 
     .wrapper_block{    
         .top_block{    
@@ -150,14 +150,14 @@
 }
 
 @include media-es{ //350
-    .text_main_block{
-
-        .main_text{
-            font-size: 20px;
-        }
-    }
 
     .content_block{
+        .text_main_block{
+            .main_text{
+                font-size: 15px;
+            }
+        }
+
         .fields{
            .field{
                height: 45px;
