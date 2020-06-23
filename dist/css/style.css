@@ -177,6 +177,56 @@
   border-radius: 25px;
 }
 
+.main_info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 40px;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.main_info .inform {
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer_block {
+  height: 100px;
+  border: 0.5px solid #c6c6c6;
+  background-color: #EDECEC;
+}
+
+.footer_block .all_footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_block .all_footer .links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_block .all_footer .links ul li {
+  display: inline;
+  margin-right: 15px;
+  padding: 3px;
+}
+
+.footer_block .all_footer .links ul li a {
+  color: #555;
+}
+
 @media screen and (max-width: 1450px) {
   .text_main_block .main_text {
     font-size: 65px;
@@ -268,6 +318,19 @@
   .bottom_block p {
     font-size: 25px;
   }
+  .footer_block .all_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -280,6 +343,19 @@
   .bottom_block p {
     font-size: 20px;
     text-align: center;
+  }
+  .footer_block .all_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -360,5 +436,6 @@ button:focus {
   background: #3a4052 url("./../../dist/img/money_photo.jpg") no-repeat center center/cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
