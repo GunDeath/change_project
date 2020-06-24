@@ -27,17 +27,23 @@
         .telegram{
             display: flex;
             align-items: center;
-            
-            span{
-                color: $title_color;
-                font-weight: 700;
-                font-size: 25px;
-                text-shadow:  .07em 0 $background_color;
-            }
 
-            img{
-                width: 55px;
-                height: 55px;
+            a{
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span{
+                    color: $title_color;
+                    font-weight: 700;
+                    font-size: 25px;
+                    text-shadow:  .07em 0 $background_color;
+                }
+    
+                img{
+                    width: 55px;
+                    height: 55px;
+                }
             }
         }
     }

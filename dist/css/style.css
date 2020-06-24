@@ -49,14 +49,27 @@
           align-items: center;
 }
 
-.wrapper_block .top_block .telegram span {
+.wrapper_block .top_block .telegram a {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper_block .top_block .telegram a span {
   color: #fff;
   font-weight: 700;
   font-size: 25px;
   text-shadow: 0.07em 0 #3a4052;
 }
 
-.wrapper_block .top_block .telegram img {
+.wrapper_block .top_block .telegram a img {
   width: 55px;
   height: 55px;
 }
@@ -189,6 +202,7 @@
 }
 
 .main_info .inform {
+  margin-top: 20px;
   height: 250px;
   text-align: center;
   border-radius: 10px;
@@ -196,6 +210,7 @@
 
 .footer_block {
   height: 100px;
+  width: 100%;
   border: 0.5px solid #c6c6c6;
   background-color: #EDECEC;
 }
@@ -225,6 +240,92 @@
 
 .footer_block .all_footer .links ul li a {
   color: #555;
+}
+
+.form_block {
+  padding: 3rem;
+  border: 0.5px solid #fff;
+  margin-bottom: 15vh;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form_block .form_text p {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  text-shadow: 0.05em 0 #3a4052;
+}
+
+.form_block .contact_form {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_block .contact_form .input_fields {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_block .contact_form .input_fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+}
+
+.form_block .contact_form .msg_btn {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_block .contact_form .msg_btn textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+}
+
+.form_block .contact_form .msg_btn .btn_call_us {
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 1450px) {
@@ -283,6 +384,9 @@
     margin-right: 20px;
     width: 30%;
   }
+  .form_text_h2 {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -331,6 +435,31 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .form_block {
+    margin: 2rem 0;
+  }
+  .form_block .form_text .form_text_h2 {
+    font-size: 35px;
+  }
+  .form_block .form_text .form_text_p {
+    font-size: 25px;
+  }
+  .form_block .contact_form {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form_block .contact_form .input_fields {
+    width: 100%;
+  }
+  .form_block .contact_form .msg_btn {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -356,6 +485,27 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form_block {
+    margin-bottom: 7.5rem;
+  }
+  .form_block .form_text .form_text_h2 {
+    font-size: 20px;
+  }
+  .form_block .form_text .form_text_p {
+    font-size: 15px;
+  }
+  .form_block .contact_form .input_fields .input {
+    font-size: 13px;
+  }
+  .form_block .contact_form .msg_btn textarea {
+    font-size: 13px;
+  }
+  .form_block .contact_form .msg_btn .btn_call_us {
+    font-size: 18px;
   }
 }
 
@@ -419,6 +569,12 @@ input {
   outline: none;
 }
 
+textarea {
+  font-family: 'Arial', sans-serif;
+  border: none;
+  outline: none;
+}
+
 button,
 button:active,
 button:focus {
@@ -436,6 +592,5 @@ button:focus {
   background: #3a4052 url("./../../dist/img/money_photo.jpg") no-repeat center center/cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: darken;
-  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

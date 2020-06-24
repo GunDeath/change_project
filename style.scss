@@ -3,6 +3,7 @@
 @import 'main_block';
 @import 'fields_block';
 @import 'info_block';
+@import 'call_us';
 @import 'responsive';
 
 *{
@@ -38,6 +39,12 @@ input{
     outline: none;
 }
 
+textarea{
+    font-family: 'Arial', sans-serif;
+    border: none;
+    outline: none;
+}
+
 button, 
 button:active, 
 button:focus {
@@ -57,6 +64,5 @@ button:focus {
     center/cover;
     background-color: rgba(0,0,0,.6);
     background-blend-mode: darken;
-    margin-bottom: 30px;
 }
 

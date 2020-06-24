@@ -3,3 +3,14 @@
     font-size: 25px;
     font-weight: 700;
 }
+
+@mixin input_fields {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+}
