@@ -1,85 +1,399 @@
-@include media-xl { //1450
+// @include media-xl { //1450
     
-    .text_main_block{
+//     .text_main_block{
 
-        .main_text{
-            font-size: 65px;
-        }
-    }
+//         .main_text{
+//             font-size: 65px;
+//         }
+//     }
 
-    .bottom_block{
+//     .bottom_block{
 
-        p{
-            font-size: 25px;
-        }
-    }
-}
+//         p{
+//             font-size: 25px;
+//         }
+//     }
+// }
 
-@include media-xm{ //1200
-    .text_main_block{
+// @include media-xm{ //1200
+//     .text_main_block{
 
-        .main_text{
-            font-size: 65px;
-        }
-    }
+//         .main_text{
+//             font-size: 65px;
+//         }
+//     }
 
-    .content_block{
+//     .content_block{
 
-        .fields{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+//         .fields{
+//             display: flex;
+//             flex-wrap: wrap;
+//             align-items: center;
+//             justify-content: center;
 
-            .btn_submit{
-                margin-top: 50px;
-                width: 50%;
+//             .btn_submit{
+//                 margin-top: 50px;
+//                 width: 50%;
+//             }
+//         }
+
+//     }
+// }
+
+// @include media-sm{ //1100
+//     .text_main_block{
+
+//         .main_text{
+//             font-size: 65px;
+//         }
+//     }
+
+//     .content_block{
+
+//         .fields{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+
+//            .field{
+//                margin-bottom: 20px;
+//            }
+
+//            .btn_submit{
+//             margin-top: 0;
+//             margin-right: 20px;
+//             width: 30%;
+//            }
+//         }
+
+//     }
+//     .form_text_h2{
+//         font-size: 45px;
+//     }
+// }
+
+// @include media-lg{ //900
+//     .text_main_block{
+
+//         .main_text{
+//             font-size: 65px;
+//         }
+//     }
+
+//     .wrapper_block{
+//         .top_block{
+//             .telegram{
+//                 span{
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @include media-md{ //750
+
+//     .content_block{
+//         .text_main_block{
+//             .main_text{
+//                 font-size: 75px;
+//             }
+//         }
+
+//         .fields{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: start;
+
+//            .btn_submit{
+//             margin-top: 0;
+//             margin-right: 20px;
+//             width: 250px;
+//            }
+//         }
+
+//     }
+
+//     .bottom_block{
+
+//         p{
+//             font-size: 25px;
+//         }
+//     }
+
+//     .footer_block{
+//         .all_footer{
+//             display: flex;
+//             flex-direction: column;
+//             text-align: center;
+//             justify-content: center;
+//             align-items: center;
+
+//             .copyrite{
+//                 margin-bottom: 0.5rem;
+//             }
+//             .links{
+//                 .footer_link{
+//                     font-size: 2vw;
+//                 }
+//             }
+//         }
+//     }
+
+//     .form_block{
+//         margin: 2rem 0;
+
+//         .form_text{
+//             .form_text_h2{
+//                 font-size: 25px;
+//             }
+//             .form_text_p{
+//                 font-size: 25px;
+//             }
+//         }
+
+//         .contact_form{
+//             height: 50%;
+//             display: flex;
+//             flex-direction: column;
+
+//             .input_fields{
+//                 width: 100%;
+//             }
+
+//             .msg_btn{
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+
+// @include media-sm{ //550
+//     .content_block{
+//         .text_main_block{
+
+//             .main_text{
+//                 font-size: 25px;
+//             }
+//         }
+//     }
+    
+
+//     .wrapper_block{    
+//         .top_block{    
+//             .logo{
+//                 .logo_text{
+//                     font-size: 35px;
+//                 }
+//             }
+//         }
+//     }
+
+//     .bottom_block{
+
+//         p{
+//             font-size: 20px;
+//             text-align: center;
+//         }
+//     }
+
+   
+//     .form_text_p{
+//         display: none;
+//     }
+// }
+
+// @include media-i{
+//     .form_block{
+//         margin-bottom: 5rem;
+//         .form_text{
+//             .form_text_h2{
+//                 font-size: 20px;
+//             }
+//             .form_text_p{
+//                 display: none;
+//             }
+//         }
+//         .contact_form{
+//             .input_fields{
+//                 .input{
+//                     font-size: 13px;
+//                 }
+//             }
+//             .msg_btn{
+//                 textarea{
+//                     font-size: 13px;
+//                 }
+//                 .btn_call_us{
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+//     }
+//     .footer_block{
+//         .all_footer{
+//             display: flex;
+//             flex-direction: column;
+//             text-align: center;
+//             justify-content: center;
+//             align-items: center;
+
+//             .copyrite{
+//                 margin-bottom: 0.5rem;
+//             }
+//             .links{
+//                 .footer_link{
+//                     font-size: 2.5vw;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @include media-es{ //350
+
+//     .content_block{
+//         .text_main_block{
+//             .main_text{
+//                 font-size: 15px;
+//             }
+//         }
+
+//         .fields{
+//            .field{
+//                height: 45px;
+//            }
+//            .sec_btn{
+//                 height: 45px;
+
+//                 img{
+//                     height: 45px;
+//                     width: 45px;
+//                 }
+//            }
+//            .btn_submit{
+//                 height: 45px;
+//            }
+//         }
+//     }
+
+//     .wrapper_block{    
+//         .top_block{    
+//             .logo{
+//                 .logo_text{
+//                     font-size: 25px;
+//                 }
+//             }
+//         }
+//     }
+//     .bottom_block{
+//         p{
+//             font-size: 15px;
+//             text-align: center;
+//         }
+//     }
+
+//     .form_block{
+//         padding: 10px 10px;
+//         margin-bottom: 3rem;
+//         .contact_form{
+//             .msg_btn{
+//                 .btn_call_us{
+//                     font-size: 15px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@include media-lg{ //1024
+    //index.html
+    .wrapper_block{
+        .top_block{
+            .logo{
+                .logo_text{
+                    font-size: 5vw;
+                }
+            }
+            .telegram{
+                .logo-span{
+                    font-size: 3vw;
+                }
             }
         }
-
     }
-}
-
-@include media-sm{ //1100
-    .text_main_block{
-
-        .main_text{
-            font-size: 65px;
-        }
-    }
-
     .content_block{
-
-        .fields{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-           .field{
-               margin-bottom: 20px;
-           }
-
-           .btn_submit{
-            margin-top: 0;
-            margin-right: 20px;
-            width: 30%;
-           }
+        display: flex;
+        justify-content: center;
+        .main_text{
+            font-size: 5vw;
+            margin-bottom: 7vh;
         }
-
+        .fields{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-gap: 20px;
+            grid-template-areas: 
+            'first_section  second_section'
+            'btn_submit btn_submit';
+            .first_field{
+                grid-area: first_section;
+            }
+            .second_field{
+                grid-area: second_section;
+            }
+            .btn_submit{
+                grid-area: btn_submit;
+                width: 50%;
+                align-self: center;
+                justify-self: center;
+            }
+        }
     }
-    .form_text_h2{
-        font-size: 45px;
+    .bottom_block{
+        p{
+            font-size: 3.5vw;
+        }
+    }
+    //call_us.html
+    .form_block{
+        margin-bottom: 25vh;
+        .form_text{
+            .form_text_h2{
+                font-size: 5vw;
+            }
+            .form_text_p{
+                font-size: 3vw;
+            }
+        }
+        .contact_form{
+            .msg_btn{
+                .btn_call_us{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .footer_block{
+        .all_footer{
+            .copyrite_block{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .links{
+                width: 100%;
+                .footer_link{
+                    font-size: 2vw;
+                }
+            }
+        }
     }
 }
 
-@include media-lg{ //900
-    .text_main_block{
-
-        .main_text{
-            font-size: 65px;
-        }
-    }
-
+@include media-md{ //768
     .wrapper_block{
         .top_block{
             .telegram{
@@ -89,217 +403,143 @@
             }
         }
     }
-}
-
-@include media-md{ //750
 
     .content_block{
-        .text_main_block{
-            .main_text{
-                font-size: 75px;
-            }
-        }
-
         .fields{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-
-           .btn_submit{
-            margin-top: 0;
-            margin-right: 20px;
-            width: 250px;
-           }
-        }
-
-    }
-
-    .bottom_block{
-
-        p{
-            font-size: 25px;
+            display: grid;
+            grid-template-areas: 
+            'first_section'
+            'second_section'
+            'btn_submit';
+            .first_field{
+                grid-area: first_section;
+                align-self: center;
+                justify-self: center;
+            }
+            .second_field{
+                grid-area: second_section;
+                align-self: center;
+                justify-self: center;
+            }
+            .btn_submit{
+                grid-area: btn_submit;
+                margin-right: 1.5rem;
+                align-self: center;
+                justify-self: center;
+            }
         }
     }
 
     .footer_block{
         .all_footer{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-
-            .copyrite{
-                margin-bottom: 0.5rem;
+            .copyrite_block{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
             .links{
+                width: 100%;
                 .footer_link{
-                    font-size: 2vw;
+                    font-size: 3vw;
                 }
             }
         }
     }
 
+    //call_us.html
     .form_block{
-        margin: 2rem 0;
-
+        margin-top: 65px;
+        min-height: 500px;
+        height: 65vh;
         .form_text{
-            .form_text_h2{
-                font-size: 25px;
-            }
-            .form_text_p{
-                font-size: 25px;
-            }
-        }
-
-        .contact_form{
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-
-            .input_fields{
-                width: 100%;
-            }
-
-            .msg_btn{
-                width: 100%;
-            }
-        }
-    }
-}
-
-@include media-sm{ //550
-    .content_block{
-        .text_main_block{
-
-            .main_text{
-                font-size: 25px;
-            }
-        }
-    }
-    
-
-    .wrapper_block{    
-        .top_block{    
-            .logo{
-                .logo_text{
-                    font-size: 35px;
-                }
-            }
-        }
-    }
-
-    .bottom_block{
-
-        p{
-            font-size: 20px;
-            text-align: center;
-        }
-    }
-
-   
-    .form_text_p{
-        display: none;
-    }
-}
-
-@include media-i{
-    .form_block{
-        margin-bottom: 5rem;
-        .form_text{
-            .form_text_h2{
-                font-size: 20px;
-            }
             .form_text_p{
                 display: none;
             }
         }
         .contact_form{
+            display: flex;
+            flex-direction: column;
             .input_fields{
+                width: 100%;
                 .input{
-                    font-size: 13px;
+                    font-size: 15px;
                 }
             }
             .msg_btn{
+                width: 100%;
                 textarea{
-                    font-size: 13px;
-                }
-                .btn_call_us{
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-    .footer_block{
-        .all_footer{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-
-            .copyrite{
-                margin-bottom: 0.5rem;
-            }
-            .links{
-                .footer_link{
-                    font-size: 2.5vw;
+                    margin-bottom: 30px;
+                    font-size: 15px;
                 }
             }
         }
     }
 }
 
-@include media-es{ //350
-
+@include media-sm{ //320
     .content_block{
-        .text_main_block{
-            .main_text{
-                font-size: 15px;
-            }
-        }
-
         .fields{
-           .field{
-               height: 45px;
-           }
-           .sec_btn{
-                height: 45px;
-
-                img{
-                    height: 45px;
-                    width: 45px;
-                }
-           }
-           .btn_submit{
-                height: 45px;
-           }
+            .field{
+                height: 10vh;
+            }
+            .sec_btn{
+                height: 10vh;
+            }
+            .btn_submit{
+                width: 70%;
+                margin-left: 1rem;
+                height: 10vh;
+            }
         }
     }
 
-    .wrapper_block{    
-        .top_block{    
-            .logo{
-                .logo_text{
-                    font-size: 25px;
+    .bottom_block{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p{
+            font-size: 4vw;
+        }
+    }
+
+    .footer_block{
+        .all_footer{
+            .links{
+                width: 100%;
+                .footer_link{
+                    font-size: 3vw;
                 }
             }
         }
     }
-    .bottom_block{
-        p{
-            font-size: 15px;
-            text-align: center;
-        }
-    }
 
-    .form_block{
-        padding: 10px 10px;
-        margin-bottom: 3rem;
-        .contact_form{
-            .msg_btn{
-                .btn_call_us{
-                    font-size: 15px;
+    //call_us.html
+
+    .wrapper_block{
+        .top_block{
+        }
+
+        .form_block{
+            min-height: 370px;
+            padding: 25px;
+            margin-top: 20px;
+            .contact_form{
+                .input_fields{
+                    .input{
+                        font-size: 12px;
+                    }
+                    .theme_input{
+                        display: none;
+                    }
+                }
+                .msg_btn{
+                    .btn_call_us{
+                        font-size: 15px;
+                    }
+                    textarea{
+                        font-size: 12px;
+                    }
                 }
             }
         }

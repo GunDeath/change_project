@@ -27,7 +27,7 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        .copyrite{
+        .copyrite_block{
             .footer_logo{
                 font-family: "Montserrat", Arial, sans-serif;
                 text-transform: uppercase;
@@ -50,31 +50,4 @@
             }
         }
     }
-    // font-family: "Montserrat", Arial, sans-serif;;
-    // background-color: #FFFFFF;
-    
-    
-    // .all_footer{
-    //     height: 100px;
-    //     display: flex;
-    //     justify-content: space-around;
-    //     align-items: center;
-
-    //     .links{
-    //         ul{
-    //             margin: 0;
-    //             padding: 0;
-
-    //             li{
-    //                 display: inline;
-    //                 margin-right: 15px;
-    //                 padding: 3px;
-
-    //                 a{
-    //                     color: $paragraph_text-color;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }
