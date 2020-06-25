@@ -4,6 +4,7 @@
 @import 'fields_block';
 @import 'info_block';
 @import 'call_us';
+@import 'rules';
 @import 'responsive';
 
 *{
@@ -29,7 +30,7 @@ h2{
 }
 
 body{
-    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     line-height: 1.4;
 }
 

@@ -1,46 +1,80 @@
-
-.main_info{
-    display: grid;
-    align-items: center;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-    .inform{
-        margin-top: 20px;
-        height: 250px;
-        text-align: center;
-        border-radius: 10px;
+.info_block{
+    background: #FFFFFF;
+    .main_info{
+        display: grid;
+        align-items: center;
+        grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    
+        .inform{
+            margin-top: 20px;
+            height: 250px;
+            text-align: center;
+            border-radius: 10px;
+        }
     }
 }
 
 .footer_block{
     height: 100px;
     width: 100%;
-    border: 0.5px solid $border-color;
-    background-color: $primary-color;
-    
-    
+    border-top: 0.5px solid $border-color;
+
     .all_footer{
         height: 100px;
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         align-items: center;
-
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .copyrite{
+            .footer_logo{
+                font-family: "Montserrat", Arial, sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #000;
+                padding-bottom: 0.5rem;
+            }
+        }
         .links{
-            ul{
-                margin: 0;
-                padding: 0;
-
-                li{
-                    display: inline;
-                    margin-right: 15px;
-                    padding: 3px;
-
-                    a{
-                        color: $paragraph_text-color;
-                    }
-                }
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .footer_link{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1vw;
+                letter-spacing: 0.1em;
+                color: #000;
             }
         }
     }
+    // font-family: "Montserrat", Arial, sans-serif;;
+    // background-color: #FFFFFF;
+    
+    
+    // .all_footer{
+    //     height: 100px;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+
+    //     .links{
+    //         ul{
+    //             margin: 0;
+    //             padding: 0;
+
+    //             li{
+    //                 display: inline;
+    //                 margin-right: 15px;
+    //                 padding: 3px;
+
+    //                 a{
+    //                     color: $paragraph_text-color;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
