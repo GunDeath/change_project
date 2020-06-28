@@ -1,0 +1,31 @@
+$title_color                : #fff;
+$background_color           : #3a4052;
+$btn_color                  : #000;
+$footer_color               : rgba(0,0,0,0.6);
+
+
+$paragraph_text-color       : #555;
+$primary-color              : #EDECEC;
+$div_dark_paragraph-color   : #aaa;
+$border-color               : #c6c6c6;
+
+$height_input               : 70px;
+$container_width            : 90%;
+
+@mixin media-lg{
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-sm{
+    @media screen and (max-width: 320px){
+        @content;
+    }
+}

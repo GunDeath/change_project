@@ -1,11 +1,12 @@
-@import 'variables';
-@import 'functions';
-@import 'main_block';
-@import 'fields_block';
-@import 'info_block';
-@import 'call_us';
-@import 'rules';
-@import 'responsive';
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'components/main_block';
+@import 'components/fields_block';
+@import 'components/info_block';
+@import 'components/call_us';
+@import 'components/rules';
+@import 'components/navbar_block';
+@import 'utils/responsive';
 
 *{
     box-sizing: border-box;
@@ -61,9 +62,7 @@ button:focus {
 
 .main_block{
     height: 100vh;
-    background: $background_color url('./../../dist/img/money_photo.jpg') no-repeat center
-    center/cover;
-    background-color: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6) url('./../../dist/img/money_photo.jpg') no-repeat center;
     background-blend-mode: darken;
 }
 

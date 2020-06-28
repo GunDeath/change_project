@@ -1,17 +1,14 @@
-@import 'functions';
+@import '../utils/functions';
 
 .content_block{
     height: 80vh;
     width: $container_width;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include display_flex (column, normal, space-around);
 
     .main_text{
-        font-size: 75px;
         color: $title_color;
-        font-weight: 700;
+        @include text_value(75px, 700);
         text-shadow:  .05em 0 $background_color;
     }
 
@@ -54,9 +51,7 @@
         .sec_btn{
             width: 100px;
             display: inline-block;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include display_flex (row, center, space-between);
 
             height: $height_input;
             background-color: $title_color;

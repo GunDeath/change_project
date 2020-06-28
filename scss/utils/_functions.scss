@@ -14,3 +14,15 @@
     color: #fff;
     width: 100%;
 }
+
+@mixin display_flex($table, $horizontal, $vertical){
+    display: flex;
+    flex-direction: $table;
+    align-items: $horizontal;
+    justify-content: $vertical;
+}
+
+@mixin text_value($text_size, $text_weight){
+    font-size: $text_size;
+    font-weight: $text_weight;
+}

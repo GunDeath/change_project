@@ -6,9 +6,7 @@
         font-size: 35px;
     }
     .position_block{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include display_flex(row, normal, space-between);
         overflow-y: scroll;
         height: 70vh;
         margin-top: 2rem;
